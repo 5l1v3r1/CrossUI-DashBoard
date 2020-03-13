@@ -210,11 +210,13 @@ xui.Class('App', 'xui.Module',{
                     },
                     {
                         "id":"c",
+                        "type":"split",
                         "caption":"My Calender",
                         "imageClass":"xui-uicmd-datetime"
                     },
                     {
                         "id":"d",
+                        "type":"split",
                         "caption":"My Tasks",
                         "imageClass":"xui-icon-bullet",
                         "disabled":false
@@ -226,6 +228,7 @@ xui.Class('App', 'xui.Module',{
                     },
                     {
                         "id":"f",
+                        "type":"split",
                         "caption":"Log out",
                         "imageClass":"xui-uicmd-popbox"
                     }
@@ -252,10 +255,10 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.SVGPaper")
                 .setHost(host,"xui_ui_svgpaper10")
-                .setRight("3em")
                 .setTop("3.5em")
                 .setWidth("17em")
                 .setHeight("4.5em")
+                .setRight("3em")
                 .setZIndex(1002)
                 .setOverflow("visible")
                 .setGraphicZIndex(2)
@@ -1522,20 +1525,6 @@ xui.Class('App', 'xui.Module',{
                         ]
                     },
                     {
-                        "desc":"rename",
-                        "type":"control",
-                        "target":"xui_ui_treeview12",
-                        "params":[null],
-                        "method":"editItem",
-                        "conditions":[
-                            {
-                                "left":"{args[1].id}",
-                                "symbol":"=",
-                                "right":"rename"
-                            }
-                        ]
-                    },
-                    {
                         "desc":"del",
                         "type":"control",
                         "target":"xui_ui_treeview12",
@@ -2402,10 +2391,10 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.FusionChartsXT")
                 .setHost(host,"xui_ui_fusionchartsxt10")
                 .setDock("fill")
-                .setLeft("8.75em")
-                .setTop("3.125em")
-                .setWidth("33.333333333333336em")
-                .setHeight("18.333333333333332em")
+                .setLeft("0em")
+                .setTop("0em")
+                .setWidth("38.125em")
+                .setHeight("18.75em")
                 .setChartType("Area2D")
                 .setJSONData({
                     "chart":{
@@ -2503,8 +2492,8 @@ xui.Class('App', 'xui.Module',{
                 .setDock("fill")
                 .setLeft("3.75em")
                 .setTop("5em")
-                .setWidth("33.333333333333336em")
-                .setHeight("18.333333333333332em")
+                .setWidth("37.6875em")
+                .setHeight("18.375em")
                 .setJSONData({
                     "chart":{
                         "xaxisname":"Month",
